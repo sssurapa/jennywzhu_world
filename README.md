@@ -203,7 +203,7 @@ Show a TA that you have the basic tests written for the Child model and that you
       rails console
     ```
 
-4.  Type the following command to use FactoryGirl:
+4.  Type the following command to use FactoryBot:
 
     ```
       require 'factory_girl_rails'
