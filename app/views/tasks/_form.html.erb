@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= f.label :name %><br>
-    <%= f.collection_select :task_id, Task.alphabetical.active.all, :id, :name, :prompt => "Select task..." %>
+    <%= f.text_field :name %>
   </div>
   <div class="field">
     <%= f.label :points %><br>

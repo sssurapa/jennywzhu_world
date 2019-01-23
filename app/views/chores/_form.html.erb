@@ -17,11 +17,11 @@
   </div>
   <div class="field">
     <%= f.label :task_id %><br />
-    <%= f.number_field :task_id %>
+    <%= f.collection_select :task_id, Task.alphabetical.active.all, :id, :name, :prompt => "Select task..." %>
   </div>
   <div class="field">
     <%= f.label :due_on %><br />
-    <%= f.date_select :due_on %>
+    <%= f.date_select :due_on, :order => [:month, :day, :year] %>
   </div>
   <div class="field">
     <%= f.label :completed %><br />

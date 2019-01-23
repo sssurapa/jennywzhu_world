@@ -13,8 +13,8 @@
   <tr>
     <td><%= chore.child.name %></td>
     <td><%= chore.task.name %></td>
-    <td align="center"><%= strftime(chore.due_on) %></td>
-    <td align="center"><%= strftime(chore.completed) %></td>
+    <td align="center"><%= strftime(chore.due_on.to_datetime) %></td>
+    <td align="center"><%= strftime(chore.completed.to_datetime) %></td>
     <td><%= link_to 'Edit', edit_chore_path(chore) %></td>
   </tr>
 <% end %>
